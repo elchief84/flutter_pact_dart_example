@@ -1,0 +1,34 @@
+name: pact_example
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  http: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  test: ^1.25.2
+#  pact_dart: ^0.7.0
+  pact_dart:
+    git:
+      url: 'https://github.com/matthewshirley/pact_dart.git'
+      ref: 'main'
+
+dependency_overrides:
+  http: ^1.2.1
+
+flutter:
+  uses-material-design: true
